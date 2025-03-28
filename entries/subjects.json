@@ -1,0 +1,16 @@
+{
+   "_id": 1,
+   "subject_name": "Mathematics",
+   "chapters": [
+       {
+           "chapter_id": 1,
+           "chapter_name": "Algebra",
+           "video_url": "https://example.com/algebra_video.mp4"
+       },
+       {
+           "chapter_id": 2,
+           "chapter_name": "Calculus",
+           "video_url": "https://example.com/calculus_video.mp4"
+       }
+   ]
+}

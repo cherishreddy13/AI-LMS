@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ session['user'] }}</h2>
+        <h3>Subjects</h3>
+        <ul>
+            {% for subject in subjects %}
+                <li>{{ subject.name }} <button class="startTracking">Start</button></li>
+            {% endfor %}
+        </ul>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
